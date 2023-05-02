@@ -1,0 +1,266 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap');
+body{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{                         
+    background-color: blue;
+
+  }
+  input {                        
+    display: none;     
+  }
+  label {                       
+      display:none;
+  }
+    ul{                           
+    display: flex;
+    justify-content: right;
+    margin-top:0;
+    padding: 0;
+   
+  
+  }
+  
+  
+  .navbar li {                     
+    display: block;
+    background:black;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    width: 200px;
+    text-align: center;
+     border-radius: 20px;
+     
+}
+ .navbar li a {
+        text-decoration: none;
+        color: white;
+        border: none;
+       
+ }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+
+}
+
+ul li .active{
+    color: yellow;
+}
+
+ .img-iconos li{
+    display: flex;
+    flex-direction: column;
+    color: aquamarine;
+    
+} 
+ 
+
+
+  main{
+    background-color: #1E438B;
+    display: grid;
+}
+
+  
+.colormain{
+    margin: 3% ;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+    
+.contenido{
+    text-align: center;
+  
+}
+.datos{
+    text-align: center;
+
+}
+
+.datos ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.datos  li samp{
+    color: black;
+}
+.datos li{
+   color: aqua;
+    list-style: none;
+    text-align: left;
+    font-size: 2rem;
+}
+
+
+   .foto{
+    width: 400px;
+    border: 7px solid aquamarine;
+    margin: 5%;
+    float: right; 
+}
+
+h1{
+    margin: 3%;
+}
+  
+   h1{
+    font-size:clamp( 4vw, 2em, 4em)
+    
+    }
+ 
+    .main h2{
+        margin: 3%;
+        color: aquamarine;
+    }
+    
+
+ h2{
+    font-size: clamp(2vw, 1.2em, 2em)
+}
+
+
+
+.contenido p{
+    margin: 3%;
+}
+
+
+
+
+.icono{
+    width: 400px;
+    margin: 0px 100px;
+    float: right; 
+}
+ 
+.contenido-redes h2 {
+    color: aquamarine;
+}
+.contenido-redes h2 samp{
+    color: black;
+}
+.contenido-redes{
+    text-align: center;
+}
+
+.contenido-redes img{
+    width: 40px;
+    height: 40px; 
+
+    
+}
+.contenido-redes li{
+    list-style: none;
+}
+.contenido-redes h1 {
+        margin: 15px;
+}
+
+.img-iconos{
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly;}
+
+
+.footer{ 
+    background-color: #1B197A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 15vh;
+    
+}
+.footercontenido{
+    display: flex;
+    margin: 3%;
+    flex-direction: column;
+}
+
+@media screen and (max-width:800px){
+
+    input:checked  ~ ul{   
+        display:block;
+          }
+      
+          input:checked ~ label {   
+          background: lightgrey; 
+              }
+      
+          label:hover{                
+          background: grey;
+          }
+      
+        li{                         
+             margin: 5px;
+             text-align: left;
+         }
+      
+         label {                      
+           box-sizing: border-box;
+           display: block;
+           border: 1px solid black;
+           border-radius: 5px;
+           width: 30px;
+           height: 30px;
+           line-height: 30px;
+           font-weight: bold;
+           text-align: center;
+           user-select: none;
+           background-color: cadetblue;
+      
+            }
+         
+       
+          
+      
+        ul{                          
+           display: none;
+           
+      
+          
+      
+      }
+      ul li a{
+        margin: 3%;
+        text-decoration: none;
+        color: white;
+      }
+      ul li a:hover{
+        color: red;
+      }
+          
+   
+   
+   
+    .colormain{
+       display: flex;
+       flex-direction: column;
+
+    }
+    .main img{
+        width:min(60%, 300px);
+        height: auto;
+    
+    }
+}
+
+    
+    
